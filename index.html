@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="validarDNI.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="estilos.css">
+    <title>Práctica Javascript</title>
+</head>
+<body>
+    
+    <div class="principal">
+        <form method = "get" name="registro" onsubmit="return validar(this)" action="index.html">
+            <label>Introduce el número del DNI:</label>
+            <input class="cajas" type="text" id="introDNI">
+            <br>
+            <br>
+            <label>Introduce la letra:</label>
+            <input class="cajas" type="text" id="edad">
+             
+            <input class="boton" type="submit" id="enviar" value="Enviar">
+            <input class="boton" type="reset" id="reset" value="Reset" onclick="limpiarCampos()">
+            
+        </form>    
+    </div>
+</body>
+</html>
